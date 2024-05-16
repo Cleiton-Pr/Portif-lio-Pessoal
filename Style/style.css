@@ -1,0 +1,261 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Seymour+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Seymour+One&display=swap');
+
+
+* {
+    
+    margin: 0%;
+    padding: 0%;
+}
+
+:root{
+--cor-primaria: #000000;
+--cor-secundaria: #ffffff;
+--cor-terciaria:#5fa3fd;
+--cor-hover: rgba(255, 255, 255, 0.658);
+--font-primaria: 'Krona One', sans-serif;
+--font-secundaria: "Montserrat", sans-serif;
+
+}
+
+body{
+    background-color: var(--cor-primaria);
+/*   height: 100vh;*/
+    color: var(--cor-secundaria)
+}
+
+
+.cabecalho_menu{
+    padding: 2%  25% ;
+      
+}
+.cabecalho_menu_link{
+
+display: flex;
+gap: 80px;
+
+
+}
+
+.cabecalho_link_click{
+ display: flex; 
+ justify-content: center;
+ text-decoration: none;
+ color:var(--cor-terciaria);
+ font-family:var(--font-secundaria);
+ font-size: 1.5rem;
+ font-weight: 600;
+ gap: 16px
+ 
+
+}
+
+.cabecalho_link_click:hover{
+
+    color: var(--cor-hover);
+}
+
+
+
+
+
+
+
+.apresentacao{
+    
+    padding: 1% 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+    font: var(--font-primaria) ;
+    width: 50%;
+    background-image: url("/img/fundo-porti.jpg");
+    
+
+}
+
+.apresentacao_conteudo{
+    padding-bottom: 5%;
+    margin-top: 15% 15%;  
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+    
+
+   
+}
+.apresentacao_conteudo_texto{
+    
+    font-size: 2.83rem;
+    margin-bottom: 40px;
+    font-family: "Rubik", sans-serif;
+}
+
+.conteudo_texto {
+    color:  var(--cor-terciaria);
+
+}
+
+.conteudo_texto2{
+
+  font-style: normal;
+  font-size: 1.87rem;
+  margin-bottom: 10%;
+  font-family:var(--font-secundaria);
+
+
+}
+
+.apresentacao_links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+
+.apresentacao_links_subtitulo{
+    font-family: var(--font-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+   
+}
+.apresentacao_link_perfil{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-family: var(--font-secundaria);
+    font-weight: 700;
+    font-size: 1.5rem;
+    width: 50%;
+    border-radius:8px;
+    padding: 12px 0px;
+    text-decoration: none;
+    border: 2px solid var(--cor-terciaria);
+    color: var(--cor-secundaria);
+  
+}
+
+.link_perfil_logo{
+    height: 35px;
+     
+      
+}
+
+.link_perfil_logo2{
+    height: 30px;
+    
+
+}
+
+.apresentacao_imagem{
+    display: flex;
+    margin-bottom: 20%;
+    height: 100%;
+    margin-right: 10%;
+    margin-top: 10%;
+    width: 70%;
+    border: solid 1px  var(--cor-terciaria);
+  
+}
+
+.apresentacao_imagem_perfil{
+    width: 100%;
+}
+
+
+
+.apresentacao_link_perfil:hover{
+    background-color:var(--cor-hover);
+    color:var(--cor-primaria);
+    border: var(--cor-secundaria) solid 2px;
+    padding:  2% 1% ;
+   
+}
+
+.rodape{
+
+    background-color: var(--cor-terciaria);
+    padding: 12px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family:  var(--font-secundaria);
+    font-weight: 400;
+    width: 100%;
+
+}
+
+
+
+
+
+@media ( max-width: 1400px){ 
+
+  
+    .cabecalho_menu{
+        padding: 2%  15%;
+        
+    }
+
+    .cabecalho_menu_link{
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+    
+    }
+
+    .apresentacao{
+       
+     
+      flex-direction: column-reverse;
+    
+      
+    }
+
+    .apresentacao_conteudo{
+
+        width: auto;
+    }
+
+    .apresentacao_imagem{
+        width: 60%;
+
+        
+    }
+    
+
+    .apresentacao_links{
+        display:flex ;
+       justify-content: center;
+   }
+
+   .apresentacao_link_perfil{
+      
+       width: 60%;
+       padding: 5% 15% 5% 20%; 
+       gap: 25px;
+   }
+
+   .apresentacao_link_perfil:hover{
+   
+    padding:  5% 20% ;
+   
+}
+   
+    .rodape{
+        
+        width: 100%;
+    }
+
+
+
+
+
+
+}
